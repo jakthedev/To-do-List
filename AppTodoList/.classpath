@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/hamcrest-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/junit5-1.26.105.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/apiguardian-api-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/assertj-core-3.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/assertj-db-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/assertj-guava-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/byte-buddy-1.9.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/byte-buddy-agent-1.9.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/common-1.26.105.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/junit-jupiter-api-5.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/junit-platform-commons-1.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/mockito-core-2.27.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/mockito-kotlin-1.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/objenesis-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rac/Desktop/opentest4j-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

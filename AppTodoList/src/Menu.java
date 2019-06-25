@@ -163,16 +163,18 @@ public class Menu {
 	 		
              private static void createaTask() {
             	Scanner sc4 = new Scanner(System.in);
- 				System.out.println("Please enter topic name");
+ 				System.out.println( "Please enter task for To do List!" );
  				String newName = sc4.nextLine(); 
  				
- 				Task k = new Task(); 
+ 				Task k = new Task(newName); 
  				
- 				k.getTask(newName); 
- 				task.add(k); 
+ 				k.getdescription();
+ 				//Task.todoTask.add(+0, (Task) todoTask); 
+ 				//System.out.println("Please enter task priority (high, medium, low) ");
+ 		        //String priority = input.nextLine();
+ 		        todoTask.add(new Task(newName));
+ 				System.out.println(" Task has been added 2 the to do List!" );
  				return;
- 				
- 				
  			 }
                
              private static void markAsDone() {
@@ -221,21 +223,15 @@ public class Menu {
  			public static void display() {
  				
  				
- 				if(task.size()==0) { 
- 					System.out.println("The To Do List for " + task + "has nothing in it!" );
+ 				if(todoTask.size()==0) { 
+ 					System.out.println("The To Do List for has nothing in it!" );
  				}else { 
  					System.out.println("Here is our Todo List for " + topic); 
- 					for(int i=0; i<task.size();i++) {
- 						System.out.println("Task " + i + " is " + task.get(i));
+ 					for(int i=0; i<todoTask.size();i++) {
+ 						System.out.println("Task " + i + " is " + todoTask.get(i));
  						return;
  					}    
  				}
- 				
- 				
- 				//for (Task strings : task) {
- 					//System.out.println(strings); 
- 					//return;
- 				//}
  			}
  				
  			public static void quit() { 
@@ -250,6 +246,8 @@ public class Menu {
  				
  				
  			}
+}
+
  			
  				
  				
@@ -260,5 +258,5 @@ public class Menu {
 
 	 		
 
-}
+
 

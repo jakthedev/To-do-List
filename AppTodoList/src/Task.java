@@ -81,6 +81,11 @@ public class Task {
 	
 	public void replace(String oldName, String newName) {
 		this.tasks.replaceAll(oldName, newName);
+	} 
+	
+	private Date Date(String deadlineDate) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

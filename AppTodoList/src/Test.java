@@ -8,9 +8,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner; 
 
-
-
-
 public class Test {
 
 	String topic;
@@ -26,7 +23,7 @@ public class Test {
 	public void should_assign_task_to_employee() {
 		//List<Task> tasks = new ArrayList<>(); 
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc1 = new Scanner(System.in);
 		System.out.println("Please enter task name ");
 		String name = sc.nextLine();
 		
@@ -57,16 +54,46 @@ public class Test {
 			String deadlineDate = sc3.nextLine(); 
 			
 			Date dl = new SimpleDateFormat("dd/MM/yyyy").parse(deadlineDate);
-			//Date date = dl.parse(deadlineDate);
-			Task d = new Task();
+			//*long date = dl.parse(deadlineDate);
+			if (dl.compareTo(Date deadlineDate))) {
+				
+			Task d = new Task(taskAssigny);
 			ArrayList l = new ArrayList();
 			d.getName(); 
 			d.setDeadLine(dl); 
 			l.add(d);
 			return;
+			}
 		}
+	} 
+	
+	public void should_create_task() {
+		
+
+	 Scanner sc = new Scanner(System.in);
+     System.out.println("Please enter task name");
+     String name = sc.nextLine();
+     System.out.println("Please enter employee name");
+     String empname = sc.nextLine();
+     System.out.println("Please enter due date");
+     System.out.println("Please enter your date in the format dd/MM/yyyy");
+     Scanner scanner = new Scanner(System.in);
+     Date d = null;
+   try {
+	d = new SimpleDateFormat("dd/MM/yyyy").parse(scanner.nextLine());
+   } catch (ParseException e) {
+	e.printStackTrace();
+   }
+           Task t = new Task(name);
+           t.setName(name);
+           t.setDeadLine(d);
+           t.setEmployee(empname);
+           tasks.add(t);
+           System.out.println("Task added successfully.");
 	}
 	
+	
+
 	public void should_create_task_in_todolist() {
 		Scanner sc2 = new Scanner(System.in);
 		System.out.println("Enter new task name?");
@@ -105,7 +132,7 @@ public class Test {
 		r.remove(deletedTask);
 		return;
 }
-	public void should_rename_task_in_todolist() {
+	public void should_rename_task() {
 		Scanner sc5 = new Scanner(System.in);
 		System.out.println("What task do you want to rename?");
 		String deletedTask = sc5.nextLine(); 
@@ -122,8 +149,16 @@ public class Test {
 	
 	public void should_assign_deadline_to_task() {
 		Scanner sc6 = new Scanner(System.in);
-		System.out.println("What task do you want to assign a deadline to?");
+		System.out.println(" What task do you want to assign a deadline to? ");
 		String deletedTask = sc6.nextLine();
+		System.out.println("Please enter your date in the format dd/MM/yyyy"); 
+		Scanner scanner = new Scanner(System.in);
+		Date date = sc6.nextLine();
+		try {
+			date = new SimpleDateFormat("dd/mm/yyyy").parse(scanner.nextLine());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
 	}
 		
 		String name = sc.nextLine(); 

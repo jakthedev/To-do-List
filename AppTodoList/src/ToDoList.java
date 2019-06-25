@@ -69,6 +69,7 @@ public class ToDoList {
 				Scanner sc = new Scanner(System.in);
 				System.out.println("Please enter task name");
 				String name = sc.nextLine(); 
+				
 				if(name != taskName) { 
 					System.out.println("Task Name Not Found");
 					}else
